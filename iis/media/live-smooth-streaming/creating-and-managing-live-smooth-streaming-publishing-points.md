@@ -238,7 +238,7 @@ To archive a live presentation, do the following:
 1. On the **Advanced Settings** tab, select the **Archive media** checkbox.  
     ![](creating-and-managing-live-smooth-streaming-publishing-points/_static/image13.png)  
   
- Select one of the following archiving options for the live broadcast:
+   Select one of the following archiving options for the live broadcast:
 
     - **Archive as single presentation**. Configures the server to create a single on-demand Smooth Streaming presentation from the live presentation archive.
     - **Archive as segmented presentation**. Configures the server to create a set of on-demand Smooth Streaming presentations ("segments") from the live presentation archive. If you choose this option, specify the length of each segment, in minutes, in the **Segment length** box.
@@ -377,7 +377,7 @@ The connection details are updated every two seconds.
 2. Expand a node for a live source to reveal the stream's **Input Type** to the publishing point.  
     ![](creating-and-managing-live-smooth-streaming-publishing-points/_static/image25.png)  
   
- The stream input type can be one of the following:  
+   The stream input type can be one of the following:  
 
     - **HTTP Push**. The live streams are being posted to the publishing point from the live source.
     - **HTTP Pull**. The publishing point is getting the live streams by requesting them from the live source.
@@ -389,21 +389,21 @@ The connection details are updated every two seconds.
 1. Expand the **Destinations** root node. Each of the additional nodes that are displayed is the domain name and/or IP address of a client.  
     ![](creating-and-managing-live-smooth-streaming-publishing-points/_static/image27.png)  
   
- Each of the additional nodes can be one of the following:  
+   Each of the additional nodes can be one of the following:  
 
     - The domain name and/or IP address of the local Live Smooth Streaming server. In this case, the publishing point is configured to deliver fragments from incoming live streams to clients, such as a Silverlight player or an Apple® mobile digital device. It might also be configured to distribute the incoming live stream to another publishing point on the local server.
     - The domain name and/or IP address of a remote Live Smooth Streaming server. In this case, the publishing point is configured to distribute the incoming live stream to a publishing point on another Live Smooth Streaming server.
 2. Expand a node for a destination to reveal the stream **Output Type** from the publishing point to the destination.  
     ![](creating-and-managing-live-smooth-streaming-publishing-points/_static/image28.png)  
   
- The stream output type can be any or all of the following, depending on the publishing point configuration: 
+   The stream output type can be any or all of the following, depending on the publishing point configuration: 
 
-    - **IIS Smooth Streaming**. The publishing point is returning MPEG-4 (MP4) fragments from incoming live streams to Silverlight-based clients that request them.
-    - **Apple HTTP Live Streaming**. The publishing point is converting MP4 fragments in incoming live streams to MPEG-2 Transport Stream (MPEG-2 TS) segments and delivering the segments to Apple mobile digital devices that request them.  
-        > [!NOTE]
-        > For more information about how to configure a publishing point to deliver live streams to Apple devices, see [Apple HTTP Live Streaming with IIS Media Services](apple-http-live-streaming-with-iis-media-services.md) .
-    - **HTTP Push**. The publishing point is pushing the incoming live streams to another publishing point, either on the local server or on a remote Live Smooth Streaming server.
-    - **HTTP Pull**. Another publishing point, either on the local server or on a remote Live Smooth Streaming server, is pulling the incoming live streams from this publishing point.
+   - **IIS Smooth Streaming**. The publishing point is returning MPEG-4 (MP4) fragments from incoming live streams to Silverlight-based clients that request them.
+   - **Apple HTTP Live Streaming**. The publishing point is converting MP4 fragments in incoming live streams to MPEG-2 Transport Stream (MPEG-2 TS) segments and delivering the segments to Apple mobile digital devices that request them.  
+       > [!NOTE]
+       > For more information about how to configure a publishing point to deliver live streams to Apple devices, see [Apple HTTP Live Streaming with IIS Media Services](apple-http-live-streaming-with-iis-media-services.md) .
+   - **HTTP Push**. The publishing point is pushing the incoming live streams to another publishing point, either on the local server or on a remote Live Smooth Streaming server.
+   - **HTTP Pull**. Another publishing point, either on the local server or on a remote Live Smooth Streaming server, is pulling the incoming live streams from this publishing point.
 3. Expand a node for an output type to display the names of the streams that the publishing point is delivering to clients.  
     ![](creating-and-managing-live-smooth-streaming-publishing-points/_static/image29.png)
 

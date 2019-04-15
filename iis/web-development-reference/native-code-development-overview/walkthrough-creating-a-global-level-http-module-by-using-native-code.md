@@ -11,11 +11,11 @@ This walkthrough demonstrates how to use C++ to create a sample global-level HTT
 ## Prerequisites  
  The following software is required to complete the steps in the example:  
   
--   [!INCLUDE[iisver](../../wmi-provider/includes/iisver-md.md)].  
+- [!INCLUDE[iisver](../../wmi-provider/includes/iisver-md.md)].  
   
--   [!INCLUDE[vsprvslong](../../wmi-provider/includes/vsprvslong-md.md)].  
+- [!INCLUDE[vsprvslong](../../wmi-provider/includes/vsprvslong-md.md)].  
   
- **Note** You may also use Visual Studio .NET 2003 or earlier, although the walkthrough steps may not be identical.  
+  **Note** You may also use Visual Studio .NET 2003 or earlier, although the walkthrough steps may not be identical.  
   
 ## Creating the Module  
  In this part of the walkthrough, you will create an empty C++ DLL project for your HTTP module.  
@@ -120,17 +120,17 @@ This walkthrough demonstrates how to use C++ to create a sample global-level HTT
   
 <!-- TODO: review snippet reference          [!CODE [CGlobalModuleHelloWorld#1](CGlobalModuleHelloWorld#1)]  -->  
   
-4.  You can optionally compile the code by using the `__stdcall (/Gz)` calling convention:  
+4. You can optionally compile the code by using the `__stdcall (/Gz)` calling convention:  
   
-    1.  On the **Project** menu, click **HelloWorld Properties**.  
+   1.  On the **Project** menu, click **HelloWorld Properties**.  
   
-    2.  Expand the **Configuration Properties** node in the tree view, expand the **C/C++** node, and then click **Advanced**.  
+   2.  Expand the **Configuration Properties** node in the tree view, expand the **C/C++** node, and then click **Advanced**.  
   
-    3.  In the **Configuration** drop-down box, select **All Configurations**.  
+   3.  In the **Configuration** drop-down box, select **All Configurations**.  
   
-    4.  In the **Calling Convention** drop-down box, select **__stdcall (/Gz)**.  
+   4.  In the **Calling Convention** drop-down box, select **__stdcall (/Gz)**.  
   
-    5.  Click **OK**.  
+   5.  Click **OK**.  
   
 ## Compiling and Testing the Module  
  Your HTTP module has everything that it needs. All that is required is to compile and test your HTTP module.  

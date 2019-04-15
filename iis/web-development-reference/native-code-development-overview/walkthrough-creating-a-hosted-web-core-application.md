@@ -106,7 +106,7 @@ This walkthrough demonstrates how to create a Windows console application that u
   
 <!-- TODO: review snippet reference      [!CODE [CHostedWebCoreHostedWebTest#1](CHostedWebCoreHostedWebTest#1)]  -->  
   
-3.  Save the HostedWebTest.cpp file.  
+3. Save the HostedWebTest.cpp file.  
   
 ## Compiling and Testing the Application  
  After creating and saving your C++ file, the next step is to compile and test your application.  
@@ -163,50 +163,50 @@ This walkthrough demonstrates how to create a Windows console application that u
   
 #### To troubleshoot errors in your application  
   
--   If your application returns the following error:  
+- If your application returns the following error:  
   
-    ```  
-    Could not load DLL.  
-    Error: 0x8007007e  
-    ```  
+  ```  
+  Could not load DLL.  
+  Error: 0x8007007e  
+  ```  
   
-     This is an ERROR_MOD_NOT_FOUND status. This error indicates that the Hwebcore.dll file cannot be located. This error will occur if IIS is not installed.  
+   This is an ERROR_MOD_NOT_FOUND status. This error indicates that the Hwebcore.dll file cannot be located. This error will occur if IIS is not installed.  
   
--   If your application returns the following error:  
+- If your application returns the following error:  
   
-    ```  
-    DLL loaded successfully.  
-    WebCoreActivate successfully resolved.  
-    WebCoreShutdown successfully resolved.  
-    Activating the Web core...  
-    WebCoreActivate failed.  
-    Error: 0x8007000d  
-    ```  
+  ```  
+  DLL loaded successfully.  
+  WebCoreActivate successfully resolved.  
+  WebCoreShutdown successfully resolved.  
+  Activating the Web core...  
+  WebCoreActivate failed.  
+  Error: 0x8007000d  
+  ```  
   
-     This is an ERROR_INVALID_DATA status. This error indicates that your configuration file cannot be located or contains errors. You should look in the Windows Event Viewer for additional error descriptions.  
+   This is an ERROR_INVALID_DATA status. This error indicates that your configuration file cannot be located or contains errors. You should look in the Windows Event Viewer for additional error descriptions.  
   
--   If your application returns the following error:  
+- If your application returns the following error:  
   
-    ```  
-    DLL loaded successfully.  
-    WebCoreActivate successfully resolved.  
-    WebCoreShutdown successfully resolved.  
-    Activating the Web core...  
-    WebCoreActivate failed.  
-    Error: 0x800700b7  
-    ```  
+  ```  
+  DLL loaded successfully.  
+  WebCoreActivate successfully resolved.  
+  WebCoreShutdown successfully resolved.  
+  Activating the Web core...  
+  WebCoreActivate failed.  
+  Error: 0x800700b7  
+  ```  
   
-     This is an ERROR_ALREADY_EXISTS status. This error indicates that your configuration file was loaded, but it contains duplicate information. For example, you may have defined more than one application pool, or you may have created duplicate Web site bindings. You should examine the Windows Event Viewer for additional error descriptions.  
+   This is an ERROR_ALREADY_EXISTS status. This error indicates that your configuration file was loaded, but it contains duplicate information. For example, you may have defined more than one application pool, or you may have created duplicate Web site bindings. You should examine the Windows Event Viewer for additional error descriptions.  
   
--   If your application loads successfully, but you receive HTTP 404 errors when you browse the Web site that is hosted by your application, you should examine the IIS logs that are created by your application for the 404 substatus codes. Here are some of the substatus codes that you may see:  
+- If your application loads successfully, but you receive HTTP 404 errors when you browse the Web site that is hosted by your application, you should examine the IIS logs that are created by your application for the 404 substatus codes. Here are some of the substatus codes that you may see:  
   
-    -   404.3 "Denied by Mime Map"—This substatus code indicates that the MIME type for a requested resource is not correctly configured. For example, you will encounter this code if you browse to a file that has a .txt file name extension, and you have not added that extension to the MIME map in your configuration file.  
+  - 404.3 "Denied by Mime Map"—This substatus code indicates that the MIME type for a requested resource is not correctly configured. For example, you will encounter this code if you browse to a file that has a .txt file name extension, and you have not added that extension to the MIME map in your configuration file.  
   
-    -   404.4 "No Handler"—This substatus code indicates that no handler has been configured for the requested resource. For example, you will encounter this code if you browse to a file that has an .htm file name extension, and you have not added the static file handler to your configuration file.  
+  - 404.4 "No Handler"—This substatus code indicates that no handler has been configured for the requested resource. For example, you will encounter this code if you browse to a file that has an .htm file name extension, and you have not added the static file handler to your configuration file.  
   
-    -   404.7 "File Extension Denied"—This substatus code indicates that the file name extension has been blocked by request filtering. For example, you will encounter this code if you browse to a file that has a .gif file name extension, and request filtering has been configured to deny access to files that have that extension.  
+  - 404.7 "File Extension Denied"—This substatus code indicates that the file name extension has been blocked by request filtering. For example, you will encounter this code if you browse to a file that has a .gif file name extension, and request filtering has been configured to deny access to files that have that extension.  
   
-     Each of these errors indicates a problem with the settings in your application's configuration file. For more information, see [Walkthrough: Creating a Configuration File for Hosted Web Core](../../web-development-reference/native-code-development-overview/walkthrough-creating-a-configuration-file-for-hosted-web-core.md).  
+    Each of these errors indicates a problem with the settings in your application's configuration file. For more information, see [Walkthrough: Creating a Configuration File for Hosted Web Core](../../web-development-reference/native-code-development-overview/walkthrough-creating-a-configuration-file-for-hosted-web-core.md).  
   
 ## See Also  
  [Creating Hosted Web Core Applications](../../web-development-reference/native-code-development-overview/creating-hosted-web-core-applications.md)   
